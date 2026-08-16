@@ -423,22 +423,17 @@ body {
    INDIA SVG MAP
 ========================================================= */
 #indiaMap {
-    position: absolute;
-
-    left: 0;
-    top: 0;
+    display: block;
 
     width: 100%;
     height: auto;
 
-    display: block;
+    max-width: none;
 
-    object-fit: initial;
+    object-fit: contain;
 
     user-select: none;
     -webkit-user-drag: none;
-
-    transform-origin: top left;
 }
 
 
@@ -1080,4 +1075,17 @@ input:focus-visible,
 .all-place-marker:hover {
     width: 18px;
     height: 18px;
+}
+#mapContainer #indiaMap {
+    display: block !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-width: none !important;
+
+    object-fit: contain !important;
 }
