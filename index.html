@@ -127,57 +127,54 @@
              MAP CONTAINER
         ================================== -->
 
-        <div id="mapContainer">
+       <div id="mapContainer">
+
+    <!-- INDIA MAP -->
+    <img
+        id="indiaMap"
+        src="India-map.svg"
+        alt="இந்திய வரைபடம்">
+
+    <!-- MARKER -->
+    <div
+        id="marker"
+        aria-hidden="true">
+    </div>
+
+</div>
 
 
-            <!-- INDIA MAP -->
+<!-- =====================================
+     INFORMATION PANEL
+====================================== -->
 
-            <img
-                id="indiaMap"
-                src="India-map.svg"
-                alt="இந்திய வரைபடம்">
+<aside
+    id="infoPanel"
+    class="info-panel">
 
+    <button
+        id="closePopup"
+        class="info-close"
+        type="button"
+        title="Close">
+        ×
+    </button>
 
-            <!-- MARKER -->
+    <div class="info-panel-header">
+        📍 <span id="popupTitle">வரலாற்று இடம்</span>
+    </div>
 
-            <div
-                id="marker"
-                aria-hidden="true">
-            </div>
+    <div
+        id="popupInfo"
+        class="info-panel-content">
 
+        <p class="info-placeholder">
+            இடத்தைத் தேர்ந்தெடுக்கவும்.
+        </p>
 
-            <!-- =================================
-                 INFORMATION POPUP
-            ================================== -->
+    </div>
 
-            <div
-                id="popup"
-                role="dialog"
-                aria-live="polite">
-
-
-                <button
-                    id="closePopup"
-                    type="button"
-                    title="Close">
-                    ×
-                </button>
-
-
-                <h3 id="popupTitle">
-                    வரலாற்று இடம்
-                </h3>
-
-
-                <div id="popupInfo">
-                    இடத்தைத் தேர்ந்தெடுக்கவும்.
-                </div>
-
-
-            </div>
-
-
-        </div>
+</aside>
 
 
         <!-- =================================
