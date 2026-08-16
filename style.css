@@ -1,0 +1,1083 @@
+/* =========================================================
+   INDIA INTERACTIVE HISTORY MAP – V3
+   style.css
+   Step 2
+========================================================= */
+
+
+/* =========================================================
+   BASIC RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family:
+        "TAU-Marutham",
+        "Latha",
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background: #eef3f8;
+    color: #222;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.app-header {
+
+    height: 72px;
+
+    flex-shrink: 0;
+
+    background: linear-gradient(
+        135deg,
+        #0d47a1,
+        #1976d2
+    );
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.20);
+
+    z-index: 100;
+}
+
+.header-title {
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+}
+
+.header-subtitle {
+
+    margin-top: 5px;
+
+    font-size: 16px;
+
+    opacity: 0.95;
+
+}
+
+
+/* =========================================================
+   MAIN APPLICATION
+========================================================= */
+
+.app-container {
+
+    flex: 1;
+
+    min-height: 0;
+
+    display: flex;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+
+    width: 300px;
+
+    min-width: 300px;
+
+    height: 100%;
+
+    background: white;
+
+    border-right: 1px solid #d5dbe3;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-shadow:
+        2px 0 8px rgba(0, 0, 0, 0.08);
+
+    z-index: 20;
+
+}
+
+
+/* Sidebar Heading */
+
+.sidebar h2 {
+
+    padding: 18px 15px 12px;
+
+    font-size: 20px;
+
+    color: #0d47a1;
+
+    border-bottom: 1px solid #e5e5e5;
+
+}
+
+
+/* =========================================================
+   SEARCH BOX
+========================================================= */
+
+.search-area {
+
+    padding: 12px;
+
+    background: #f7f9fc;
+
+    border-bottom: 1px solid #e1e5ea;
+
+}
+
+#searchBox {
+
+    width: 100%;
+
+    height: 42px;
+
+    padding: 0 13px;
+
+    border: 1px solid #c7ced8;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    background: white;
+
+    transition: 0.2s;
+
+}
+
+#searchBox:focus {
+
+    border-color: #1976d2;
+
+    box-shadow:
+        0 0 0 3px rgba(25, 118, 210, 0.12);
+
+}
+
+
+/* =========================================================
+   PLACE LIST
+========================================================= */
+
+.list-container {
+
+    flex: 1;
+
+    min-height: 0;
+
+    overflow-y: auto;
+
+}
+
+
+/* Scrollbar */
+
+.list-container::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+.list-container::-webkit-scrollbar-track {
+
+    background: #f1f1f1;
+
+}
+
+.list-container::-webkit-scrollbar-thumb {
+
+    background: #b7c0cb;
+
+    border-radius: 10px;
+
+}
+
+.list-container::-webkit-scrollbar-thumb:hover {
+
+    background: #8f9aa8;
+
+}
+
+
+/* List */
+
+#placeList {
+
+    list-style: none;
+
+    padding: 5px 0 15px;
+
+}
+
+
+/* Individual Place */
+
+#placeList li {
+
+    padding: 11px 16px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    color: #333;
+
+    transition:
+        background 0.18s ease,
+        color 0.18s ease,
+        padding-left 0.18s ease;
+
+}
+
+
+/* Hover */
+
+#placeList li:hover {
+
+    background: #e3f2fd;
+
+    color: #0d47a1;
+
+    padding-left: 22px;
+
+}
+
+
+/* Selected */
+
+#placeList li.active {
+
+    background: #1565c0;
+
+    color: white;
+
+    font-weight: 700;
+
+    padding-left: 22px;
+
+}
+
+
+/* =========================================================
+   MAP SECTION
+========================================================= */
+
+.map-section {
+
+    flex: 1;
+
+    min-width: 0;
+
+    min-height: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: #f4f7fb;
+
+}
+
+
+/* =========================================================
+   MAP TOOLBAR
+========================================================= */
+
+.map-toolbar {
+
+    height: 58px;
+
+    flex-shrink: 0;
+
+    background: white;
+
+    border-bottom: 1px solid #d9dfe7;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 8px;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.06);
+
+    z-index: 15;
+
+}
+
+
+/* Toolbar Buttons */
+
+.map-toolbar button {
+
+    min-width: 45px;
+
+    height: 38px;
+
+    padding: 0 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #1565c0;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.18s ease,
+        transform 0.12s ease;
+
+}
+
+
+/* Hover */
+
+.map-toolbar button:hover {
+
+    background: #0d47a1;
+
+}
+
+
+/* Click */
+
+.map-toolbar button:active {
+
+    transform: scale(0.96);
+
+}
+
+
+/* =========================================================
+   MAP CONTAINER
+========================================================= */
+
+#mapContainer {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background: #e8eef5;
+    cursor: grab;
+}
+#mapContainer:active {
+    cursor: grabbing;
+}
+
+/* =========================================================
+   INDIA SVG MAP
+========================================================= */
+#indiaMap {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: initial;
+
+    user-select: none;
+    -webkit-user-drag: none;
+
+    transform-origin: top left;
+}
+
+
+/* =========================================================
+   MARKER
+========================================================= */
+
+#marker {
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    background: red;
+
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 9999;
+
+    display: none;
+
+    pointer-events: none;
+
+    box-shadow:
+        0 0 0 4px rgba(255,255,255,0.8),
+        0 0 18px red;
+}
+/* Marker Pulse */
+
+@keyframes markerPulse {
+
+    0% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+
+    }
+
+    50% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1.35);
+
+    }
+
+    100% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+
+    }
+
+}
+
+
+/* =========================================================
+   POPUP
+========================================================= */
+
+#popup {
+
+    position: absolute;
+
+    display: none;
+
+    width: 290px;
+
+    max-width: 90%;
+
+    background: white;
+
+    border-radius: 10px;
+
+    border: 1px solid #d7dde5;
+
+    padding: 17px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+
+    z-index: 80;
+
+    animation:
+        popupAppear 0.18s ease;
+
+}
+
+
+/* Popup Animation */
+
+@keyframes popupAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(5px)
+            scale(0.97);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+/* Popup Title */
+
+#popupTitle {
+
+    padding-right: 25px;
+
+    margin-bottom: 10px;
+
+    color: #0d47a1;
+
+    font-size: 20px;
+
+}
+
+
+/* Popup Content */
+
+#popupInfo {
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #333;
+
+}
+
+
+/* Popup Close */
+
+#closePopup {
+
+    position: absolute;
+
+    top: 8px;
+
+    right: 9px;
+
+    width: 28px;
+
+    height: 28px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #eeeeee;
+
+    color: #444;
+
+    font-size: 21px;
+
+    line-height: 25px;
+
+    cursor: pointer;
+
+}
+
+#closePopup:hover {
+
+    background: #e53935;
+
+    color: white;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.app-footer {
+
+    height: 34px;
+
+    flex-shrink: 0;
+
+    background: #0d47a1;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+
+        width: 250px;
+
+        min-width: 250px;
+
+    }
+
+    .header-title {
+
+        font-size: 23px;
+
+    }
+
+    #indiaMap {
+
+        height: 94%;
+
+        max-width: 94%;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    body {
+
+        overflow: auto;
+
+    }
+
+    .app-header {
+
+        height: 70px;
+
+    }
+
+    .header-title {
+
+        font-size: 20px;
+
+    }
+
+    .header-subtitle {
+
+        font-size: 13px;
+
+    }
+
+    .app-container {
+
+        flex-direction: column;
+
+        min-height: calc(100vh - 104px);
+
+    }
+
+    .sidebar {
+
+        width: 100%;
+
+        min-width: 100%;
+
+        height: 230px;
+
+        min-height: 230px;
+
+    }
+
+    .sidebar h2 {
+
+        padding: 10px 14px;
+
+        font-size: 17px;
+
+    }
+
+    .map-section {
+
+        min-height: 500px;
+
+    }
+
+    .map-toolbar {
+
+        height: 52px;
+
+    }
+
+    #popup {
+
+        width: 250px;
+
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+button:focus-visible,
+input:focus-visible,
+#placeList li:focus-visible {
+
+    outline: 3px solid rgba(25, 118, 210, 0.35);
+
+    outline-offset: 2px;
+
+}
+/* =========================================================
+   COORDINATE PICKER
+========================================================= */
+
+#coordinatePanel {
+
+    position: absolute;
+
+    left: 15px;
+
+    bottom: 15px;
+
+    width: 250px;
+
+    padding: 12px;
+
+    background: rgba(255,255,255,0.96);
+
+    border: 1px solid #cbd3dc;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.18);
+
+    z-index: 100;
+
+    font-size: 14px;
+
+    display: none;
+}
+
+#coordinatePanel strong {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #0d47a1;
+
+}
+
+#coordinatePanel div {
+
+    margin-bottom: 6px;
+
+}
+
+#coordinatePanel span {
+
+    display: inline-block;
+
+    min-width: 70px;
+
+    padding: 3px 6px;
+
+    background: #f1f4f7;
+
+    border-radius: 4px;
+
+    font-family: monospace;
+
+    font-weight: bold;
+
+}
+
+#coordinatePanel button {
+
+    padding: 7px 10px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #1565c0;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+#coordinatePanel button:hover {
+
+    background: #0d47a1;
+
+}
+
+
+/* Picker Mode */
+
+#mapContainer.picker-mode {
+
+    cursor: crosshair;
+
+}
+
+#mapContainer.picker-mode #indiaMap {
+
+    cursor: crosshair;
+
+}
+
+
+/* Picker Point */
+
+#pickerPoint {
+
+    position: absolute;
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: #e53935;
+
+    border: 3px solid white;
+
+    box-shadow:
+        0 0 0 3px rgba(229,57,53,0.25),
+        0 0 15px rgba(229,57,53,0.9);
+
+    transform:
+        translate(-50%, -50%);
+
+    display: none;
+
+    z-index: 120;
+
+    pointer-events: none;
+
+}
+
+
+/* Crosshair */
+
+#pickerPoint::before,
+#pickerPoint::after {
+
+    content: "";
+
+    position: absolute;
+
+    background: #e53935;
+
+}
+
+#pickerPoint::before {
+
+    width: 34px;
+
+    height: 2px;
+
+    left: -11px;
+
+    top: 5px;
+
+}
+
+#pickerPoint::after {
+
+    width: 2px;
+
+    height: 34px;
+
+    left: 5px;
+
+    top: -11px;
+
+}
+/* =====================================
+   INFORMATION POPUP
+===================================== */
+
+#popup {
+    position: absolute;
+
+    width: 300px;
+    max-width: calc(100% - 30px);
+
+    padding: 18px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    border: 2px solid #d62828;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+
+    z-index: 10000;
+
+    display: none;
+
+    box-sizing: border-box;
+
+    font-family:
+        "Noto Sans Tamil",
+        "Latha",
+        Arial,
+        sans-serif;
+}
+
+
+/* Popup Heading */
+
+#popupTitle {
+    margin: 0 35px 12px 0;
+
+    font-size: 20px;
+
+    color: #b71c1c;
+
+    font-weight: 700;
+}
+
+
+/* Popup Information */
+
+#popupInfo {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #333333;
+}
+
+
+/* Close Button */
+
+#closePopup {
+    position: absolute;
+
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #d62828;
+
+    color: white;
+
+    font-size: 20px;
+
+    line-height: 30px;
+
+    cursor: pointer;
+
+    padding: 0;
+}
+
+
+/* Close Button Hover */
+
+#closePopup:hover {
+    background: #a4161a;
+}
+#placeList li.active {
+    background: #ffe0e0;
+    color: #b71c1c;
+    font-weight: 700;
+    border-left: 5px solid #d62828;
+}
+/* =====================================
+   ALL PLACES MARKERS
+===================================== */
+
+/* =====================================
+   ALL PLACES MARKER
+===================================== */
+
+.all-place-marker {
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    transform: translate(-50%, -50%);
+
+    background: #d62828;
+
+    border: 2px solid #ffffff;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 1px 5px rgba(0, 0, 0, 0.45);
+
+    z-index: 800;
+
+    cursor: pointer;
+}
+
+.all-place-marker:hover {
+    width: 18px;
+    height: 18px;
+}

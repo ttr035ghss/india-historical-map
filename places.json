@@ -1,0 +1,332 @@
+[
+  {
+    "id": 1,
+    "name": "Madras மெட்ராஸ் ",
+    "current": "Chennai",
+    "state": "Tamil Nadu",
+    "x": 935,
+    "y": 1947,
+    "category": "British Presidency",
+    "info": "Headquarters of the Madras Presidency."
+  },
+  {
+    "id": 2,
+    "name": "Pondicherry பாண்டிச்சேரி",
+    "current": "Puducherry",
+    "state": "Puducherry",
+    "x": 914,
+    "y": 2027,
+    "category": "French Settlement",
+    "info": "An important French settlement on the Coromandel Coast."
+  },
+  {
+    "id": 3,
+    "name": "Arcot ஆற்காடு",
+    "current": "Arcot",
+    "state": "Tamil Nadu",
+    "x": 884,
+    "y": 1966,
+    "category": "Historical Centre",
+    "info": "An important historical centre in northern Tamil Nadu."
+  },
+  {
+    "id": 4,
+    "name": "Pulicat",
+    "current": "Pulicat",
+    "state": "Tamil Nadu",
+    "x": 933,
+    "y": 1925,
+    "category": "European Settlement",
+    "info": "An important Dutch settlement and trading centre on the Coromandel Coast."
+  },
+  {
+    "id": 5,
+    "name": "Calicut",
+    "current": "Kozhikode",
+    "state": "Kerala",
+    "x": 662,
+    "y": 2040,
+    "category": "European Settlement",
+    "info": "An important port and centre of European trade on the Malabar Coast."
+  },
+  {
+    "id": 6,
+    "name": "Cochin",
+    "current": "Kochi",
+    "state": "Kerala",
+    "x": 699,
+    "y": 2122,
+    "category": "European Settlement",
+    "info": "An important historical port and European settlement on the Malabar Coast."
+  },
+  {
+    "id": 7,
+    "name": "Surat",
+    "current": "Surat",
+    "state": "Gujarat",
+    "x": 514,
+    "y": 1372,
+    "category": "European Settlement",
+    "info": "An important historical port and centre of European trade."
+  },
+  {
+    "id": 8,
+    "name": "Chinsura",
+    "current": "Chinsurah",
+    "state": "West Bengal",
+    "x": 1401,
+    "y": 1130,
+    "category": "European Settlement",
+    "info": "An important Dutch settlement in Bengal."
+  },
+  {
+    "id": 9,
+    "name": "Calcutta",
+    "current": "Kolkata",
+    "state": "West Bengal",
+    "x": 1413,
+    "y": 1290,
+    "category": "British Presidency",
+    "info": "Capital of the Bengal Presidency and an important centre of British administration."
+  },
+  {
+    "id": 10,
+    "name": "Plassey",
+    "current": "Palashi",
+    "state": "West Bengal",
+    "x": 1437,
+    "y": 1240,
+    "category": "Battle Site",
+    "info": "Site of the Battle of Plassey in 1757."
+  },
+  {
+    "id": 11,
+    "name": "Buxar",
+    "current": "Buxar",
+    "state": "Bihar",
+    "x": 1249,
+    "y": 1187,
+    "category": "Battle Site",
+    "info": "Site of the Battle of Buxar in 1764."
+  },
+  {
+    "id": 12,
+    "name": "Purandhar",
+    "current": "Purandar",
+    "state": "Maharashtra",
+    "x": 576,
+    "y": 1552,
+    "category": "Treaty / Historical Site",
+    "info": "Associated with the Treaty of Purandhar."
+  },
+  {
+    "id": 13,
+    "name": "Wandiwash",
+    "current": "Vandavasi",
+    "state": "Tamil Nadu",
+    "x": 892,
+    "y": 1983,
+    "category": "Battle Site",
+    "info": "Site of the Battle of Wandiwash in 1760."
+  },
+  {
+    "id": 14,
+    "name": "Delhi",
+    "current": "Delhi",
+    "state": "Delhi",
+    "x": 756,
+    "y": 797,
+    "category": "Historical Centre",
+    "info": "An important historical and political centre of India."
+  },
+  {
+    "id": 15,
+    "name": "Lucknow",
+    "current": "Lucknow",
+    "state": "Uttar Pradesh",
+    "x": 1031,
+    "y": 900,
+    "category": "Revolt of 1857",
+    "info": "An important centre of the Revolt of 1857."
+  },
+  {
+    "id": 16,
+    "name": "Meerut",
+    "current": "Meerut",
+    "state": "Uttar Pradesh",
+    "x": 818,
+    "y": 789,
+    "category": "Revolt of 1857",
+    "info": "The Revolt of 1857 began at Meerut on 10 May 1857."
+  },
+  {
+    "id": 17,
+    "name": "Barrackpore",
+    "current": "Barrackpore",
+    "state": "West Bengal",
+    "x": 1433,
+    "y": 1253,
+    "category": "Revolt of 1857",
+    "info": "An important military centre associated with the events leading to the Revolt of 1857."
+  },
+  {
+    "id": 18,
+    "name": "Jhansi",
+    "current": "Jhansi",
+    "state": "Uttar Pradesh",
+    "x": 838,
+    "y": 974,
+    "category": "Revolt of 1857",
+    "info": "An important centre of the Revolt of 1857, associated with Rani Lakshmibai."
+  },
+  {
+    "id": 19,
+    "name": "Gwalior",
+    "current": "Gwalior",
+    "state": "Madhya Pradesh",
+    "x": 781,
+    "y": 937,
+    "category": "Revolt of 1857",
+    "info": "An important centre associated with the Revolt of 1857 and Rani Lakshmibai."
+  },
+  {
+    "id": 20,
+    "name": "Kanpur",
+    "current": "Kanpur",
+    "state": "Uttar Pradesh",
+    "x": 908,
+    "y": 945,
+    "category": "Revolt of 1857",
+    "info": "An important centre of the Revolt of 1857."
+  },
+  {
+    "id": 21,
+    "name": "Nalanda",
+    "current": "Nalanda",
+    "state": "Bihar",
+    "x": 1241,
+    "y": 1089,
+    "category": "Ancient University",
+    "info": "An ancient centre of learning and one of the most famous universities of ancient India."
+  },
+  {
+    "id": 22,
+    "name": "Tiruchirappalli",
+    "current": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "x": 843,
+    "y": 2090,
+    "category": "Historical Centre",
+    "info": "An important historical centre in Tamil Nadu."
+  },
+  {
+    "id": 23,
+    "name": "Varanasi",
+    "current": "Varanasi",
+    "state": "Uttar Pradesh",
+    "x": 1109,
+    "y": 1084,
+    "category": "Historical Centre",
+    "info": "An important ancient city and historical centre on the banks of the Ganges."
+  },
+  {
+    "id": 24,
+    "name": "Madurai",
+    "current": "Madurai",
+    "state": "Tamil Nadu",
+    "x": 802,
+    "y": 2204,
+    "category": "Historical Centre",
+    "info": "An important historical and cultural centre of Tamil Nadu."
+  },
+  {
+    "id": 25,
+    "name": "Bombay",
+    "current": "Mumbai",
+    "state": "Maharashtra",
+    "x": 514,
+    "y": 1515,
+    "category": "British Presidency",
+    "info": "An important centre of British administration and trade on the western coast."
+  },
+  {
+    "id": 26,
+    "name": "Kanchipuram",
+    "current": "Kanchipuram",
+    "state": "Tamil Nadu",
+    "x": 908,
+    "y": 1966,
+    "category": "Historical Centre",
+    "info": "An ancient historical and cultural centre of Tamil Nadu."
+  },
+  {
+    "id": 27,
+    "name": "Vikramshila",
+    "current": "Vikramshila",
+    "state": "Bihar",
+    "x": 1392,
+    "y": 1047,
+    "category": "Ancient University",
+    "info": "An important ancient centre of higher learning in Bihar."
+  },
+  {
+    "id": 28,
+    "name": "Ahmadabad",
+    "current": "Ahmedabad",
+    "state": "Gujarat",
+    "x": 494,
+    "y": 1253,
+    "category": "Historical Centre",
+    "info": "An important historical and commercial centre of Gujarat."
+  },
+  {
+    "id": 29,
+    "name": "Dacca",
+    "current": "Dhaka",
+    "state": "Bangladesh",
+    "x": 1519,
+    "y": 1125,
+    "category": "Historical Centre",
+    "info": "An important historical centre of Bengal and the former capital of East Bengal."
+  },
+  {
+    "id": 30,
+    "name": "Kulti",
+    "current": "Kulti",
+    "state": "West Bengal",
+    "x": 1384,
+    "y": 1125,
+    "category": "Industrial Centre",
+    "info": "An important industrial centre in eastern India."
+  },
+  {
+    "id": 31,
+    "name": "Jamshedpur",
+    "current": "Jamshedpur",
+    "state": "Jharkhand",
+    "x": 1314,
+    "y": 1285,
+    "category": "Industrial Centre",
+    "info": "An important industrial centre in eastern India."
+  },
+  {
+    "id": 32,
+    "name": "Rishra",
+    "current": "Rishra",
+    "state": "West Bengal",
+    "x": 1437,
+    "y": 1199,
+    "category": "Industrial Centre",
+    "info": "An important industrial centre in the Hooghly region of West Bengal."
+  },
+  {
+    "id": 33,
+    "name": "Assam",
+    "current": "Assam",
+    "state": "Assam",
+    "x": 1626,
+    "y": 978,
+    "category": "Historical Region",
+    "info": "A historically important region in northeastern India."
+  }
+]
